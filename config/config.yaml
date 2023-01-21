@@ -3,7 +3,7 @@ training_pipeline_config:
   artifact_dir: artifact
 
 data_ingestion_config:
-  dataset_download_url: housing\dataset\house-prices-advanced-regression-techniques.zip
+  dataset_download_url: housing\dataset\Real estate.zip
   # https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data
   # https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz
   raw_data_dir: raw_data
