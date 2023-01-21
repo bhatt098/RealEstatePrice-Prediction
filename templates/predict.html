@@ -1,0 +1,59 @@
+ 
+
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <h1>House Price Prediction</h1>
+    <p>Resize the browser window to see the effect.</p>
+    <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>
+    <div class="row">
+        <form action="{{ url_for("predict")}}" method="post">
+            <div class="col-sm-6">
+                <label for="transaction date">transaction date:</label><br>
+                <input  type="text" id="transaction_date" name="transaction_date" value=2012.917><br>
+    
+                <label for="house age">house age:</label><br>
+                <input  type="text" id="house_age" name="house_age" value=32.0><br><br>
+    
+                <label for="distance to the nearest MRT station">distance to the nearest MRT station:</label><br>
+                <input  type="text" id="distance_MRT_station" name="distance_MRT_station" value=84.87882><br>
+    
+                <label for="number of convenience stores">number of convenience stores:</label><br>
+                <input  type="text" id="convenience_stores" name="convenience_stores" value=10><br><br>
+    
+                <label for="latitude">latitude:</label><br>
+                <input  type="text" id="latitude" name="latitude" value=24.98298><br>
+    
+                <label for="longitude">longitude:</label><br>
+                <input  type="text" id="longitude" name="longitude" value=121.54024	><br><br>
+    
+                           
+    
+    
+            
+    
+    
+            
+    
+            <div class="mb-3">
+    
+                <input class="btn btn-primary" type="submit" value="Predict Median House Value" required />
+            </div>
+    
+        </form>
+    </div>
+</div>
+
+</body>
+
+</html> 
+
+
